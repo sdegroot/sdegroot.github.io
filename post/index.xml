@@ -48,5 +48,21 @@ This is exactly the situation I was in while working on some high-load services 
 &lt;p&gt;Google however published a paper on this subject. I am mentioning this specifically because Google has a whole different approach. I recommend to spend some time to read the great summary of Adrian Colyer. Paper:&amp;nbsp;&lt;a href=&#34;https://blog.acolyer.org/2015/10/06/dapper-a-large-scale-distributed-systems-tracing-infrastructure/&#34;&gt;Dapper, A Large Scale Distributed Systems Tracing&amp;nbsp;Infrastructure.&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Talk: TWYP - An event driven architecture in a fast growing ecosystem</title>
+      <link>http://iamgroot.info/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</link>
+      <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
+      
+      <guid>http://iamgroot.info/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</guid>
+      <description>&lt;p&gt;I was asked to give a talk on &lt;em&gt;Event Driven Architectures&lt;/em&gt; at &lt;a href=&#34;http://www.laccongres.nl/&#34;&gt;Landelijk Architectuur Congres&lt;/a&gt;.
+ This Dutch conference was hosted in &lt;em&gt;&amp;rsquo;s Hertogenbosch&lt;/em&gt; on November 17th-18th 2016.&lt;/p&gt;
+
+&lt;p&gt;The talk explains in more detail on how Twyp&amp;rsquo;s architecture is based on the reactive manifesto.
+During this presentation I am explaining how Twyp is architected and what we&amp;rsquo;ve learned in over two years of development.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately the talk was not recorded. But you can find the slides on &lt;a href=&#34;https://www.slideshare.net/SanderdeGroot3/twyp-an-event-driven-architecture-in-a-fast-growing-ecosystem&#34;&gt;SlideShare&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,0 +1,589 @@
+
+
+  
+    
+  
+
+
+  
+
+
+
+
+
+  
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.18.1">
+    <title>Logging without compromising on detail or performance</title>
+    <meta name="author" content="Sander de Groot">
+    <meta name="keywords" content="logging, logback, performance, reference-implementation, debug logging">
+
+    <link rel="icon" href="http://iamgroot.info/favicon.png">
+    
+
+    
+    <meta name="description" content="Application logging. Have you ever had to choose between detailled logging or performance?
+Where you on one side wanted to log something on a certain level of detail while
+you knew that this would have an enormous impact on the performance of your application?
+This is exactly the situation I was in while working on some high-load services at Twyp.">
+    <meta property="og:description" content="Application logging. Have you ever had to choose between detailled logging or performance?
+Where you on one side wanted to log something on a certain level of detail while
+you knew that this would have an enormous impact on the performance of your application?
+This is exactly the situation I was in while working on some high-load services at Twyp.">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Logging without compromising on detail or performance">
+    <meta property="og:url" content="/2017/02/logging-without-compromising-on-detail-or-performance/">
+    <meta property="og:site_name" content="I Am Groot - Blog of Sander de Groot">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="I Am Groot - Blog of Sander de Groot">
+    <meta name="twitter:description" content="Application logging. Have you ever had to choose between detailled logging or performance?
+Where you on one side wanted to log something on a certain level of detail while
+you knew that this would have an enormous impact on the performance of your application?
+This is exactly the situation I was in while working on some high-load services at Twyp.">
+    
+    
+
+    
+    
+
+    
+      <meta property="og:image" content="http://iamgroot.info/images/SanderDeGroot.jpg">
+    
+
+    
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" />
+    
+    
+    <link rel="stylesheet" href="http://iamgroot.info/css/style-gwlo24d2hxipxk8bi1sxik0zhlpn9t7ebcmgp9kubmmcjfzlavuyhvbqumhn.min.css" />
+    
+    
+    
+      
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-92528488-1\x27', 'auto');
+ga('send', 'pageview');
+</script>
+
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="http://iamgroot.info/">I Am Groot - Blog of Sander de Groot</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="http://iamgroot.info/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="http://iamgroot.info/images/SanderDeGroot.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="http://iamgroot.info/#about">
+          <img class="sidebar-profile-picture" src="http://iamgroot.info/images/SanderDeGroot.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Sander de Groot</h4>
+        
+          <h5 class="sidebar-profile-bio">Loves to automate the world!</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://iamgroot.info/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://iamgroot.info/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://iamgroot.info/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://iamgroot.info/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://iamgroot.info/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/sdegroot" target="_blank">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/sdg91t" target="_blank">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      
+      <span class="sidebar-button-desc">LinkedIn</span>
+    </a>
+  </li>
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://iamgroot.info/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Logging without compromising on detail or performance
+    </h1>
+  
+  <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2017-02-24T20:00:00Z">
+      
+  February 24, 2017
+
+    </time>
+  
+  
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="http://iamgroot.info/categories/tips-and-tricks">Tips and tricks</a>
+    
+  
+
+
+</div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>Application logging. Have you ever had to choose between detailled logging or performance?
+Where you on one side wanted to log something on a certain level of detail while
+you knew that this would have an enormous impact on the performance of your application?
+This is exactly the situation I was in while working on some high-load services at <a href="https://www.twyp.com/">Twyp</a>.</p>
+
+<p>
+<h2>Always the dilemma, should I log this on DEBUG or INFO?</h2>
+<p><img style="float:right" src="https://blogs.infosupport.com/wp-content/uploads/2016/08/dilemma-300x182.jpeg" alt="dilemma" width="300" height="182" srcset="https://blogs.infosupport.com/wp-content/uploads/2016/08/dilemma-300x182.jpeg 300w, https://blogs.infosupport.com/wp-content/uploads/2016/08/dilemma-493x300.jpeg 493w, https://blogs.infosupport.com/wp-content/uploads/2016/08/dilemma.jpeg 625w" sizes="(max-width: 300px) 100vw, 300px"></p>
+<p>When you are working on your application you have to take into account that this code is going to be running somewhere soon. Someone (preferably you yourself) will be maintaining this code.&nbsp;If you have ever had to analyse some incident and&nbsp;you found that the logs were not of use at all, you will know the pain.</p>
+<p>Luckily there are some people that wrote&nbsp;tips on <a href="https://www.javacodegeeks.com/2011/01/10-tips-proper-application-logging.html">how you can write proper log statements</a>. But keep in mind that the only thing that counts, is&nbsp;the value of the logs to the person or system reading them. If you ever maintained a production application you will know what I am talking about. Applications are logging errors and warnings but you simply don’t understand what exactly caused this error as you are missing vital parts of the context. So, the answer would be&nbsp;to simply enable debug logging, right? Unfortunately it isn’t that simple.</p>
+<p>Enabling debug logging has two major drawbacks</p>
+<ul>
+<li>Debug logging usually contains more sensitive information about operations. You simply don’t want to be logging&nbsp;that&nbsp;someone specific is making a transaction with some sensitive description… (I leave those up for your imagination)</li>
+<li>Developers tend to write&nbsp;<em>a lot</em> of debug statements. Imagine 12 debug statements per service request times 100,000 requests / min. &nbsp;Within the hour you’ll have 72 million log statements.</li>
+</ul>
+<p>And aside from these issues, you should also ask yourself, is all this&nbsp;information useful? 99% of the time you will not need this kind of detail, especially in the cases where everything is running just fine.</p>
+<p>At Twyp we were struggling with&nbsp;this dilemma.&nbsp;Initially we decided to optimise&nbsp;debug logging in the code and then&nbsp;turn it on on production. This was a&nbsp;huge help to our operations people as they finally had all the information about a problem that they needed. But we also&nbsp;noticed that our services started to slow down more and more.</p>
+<p>Before you read on, I need to warn you that this blog post is about&nbsp;applicative logging. You should never optimise&nbsp;audit-&nbsp;or&nbsp;security logging to the point that you may lose data!</p>
+<h2>Logging using&nbsp;the contextual-logbuffer</h2>
+<p>So we need to find a way to achieve the following goal:</p>
+<blockquote><p>Only log relevant log statements&nbsp;that can help to resolve&nbsp;problems.</p></blockquote>
+<p>This is exactly what the&nbsp;<em>contextual-logbuffer</em>&nbsp;provides. You could best describe the contextual-logbuffer in the following way:</p>
+<blockquote><p>A contextual logbuffer is an interceptor running in your log framework that buffers parts of&nbsp;your logs and only flushes this buffer when there is an event that requires previous or future logging to be flushed to disk.</p></blockquote>
+<p>The contextual logbuffer works based on a <em>FIFO</em>&nbsp;buffer. It stores all log messages within a certain range (e.g. <em>DEBUG </em>up until<em> INFO</em>). Only whenever a configurable threshold is reached will the buffer flushed to disk. This threshold normally is any log message of a certain log level, usually this would be <em>WARN</em>. This means that all&nbsp;<em>DEBUG</em>&nbsp;and<em>&nbsp;INFO </em>log messages are buffered until a&nbsp;<em>WARN&nbsp;</em>or higher is triggered. If your application is never generating warnings or errors then your application will not log anything anymore, as the buffer is never flushed.</p>
+<p>A picture says more than 1,000 words, so to put this into perspective check out the diagram below.</p>
+<p><a href="https://blogs.infosupport.com/wp-content/uploads/2016/08/AD-Context-Logbuffer-1.png"><img class="alignnone size-full wp-image-19336" src="https://blogs.infosupport.com/wp-content/uploads/2016/08/AD-Context-Logbuffer-1.png" alt="Activity diagram of the contextual logbuffer" width="805" height="480" srcset="https://blogs.infosupport.com/wp-content/uploads/2016/08/AD-Context-Logbuffer-1.png 805w, https://blogs.infosupport.com/wp-content/uploads/2016/08/AD-Context-Logbuffer-1-300x179.png 300w, https://blogs.infosupport.com/wp-content/uploads/2016/08/AD-Context-Logbuffer-1-768x458.png 768w, https://blogs.infosupport.com/wp-content/uploads/2016/08/AD-Context-Logbuffer-1-500x298.png 500w" sizes="(max-width: 805px) 100vw, 805px"></a></p>
+<p>This mechanism provides a way to always have&nbsp;logging available on the level you need while it prevents the performance hit of logging&nbsp;<em>all</em> log messages. There is one drawback to note though. Sometimes it can be very useful to have logging available in cases where there was no&nbsp;fault in the system. A typical example could be a customer complaining about a certain issue. If there was no warning or error for that specific scenario, you will not find any logs to help you with the customer complaint. In this case I would recommend you to fall back on your audit logs, which at least should be able to provide you with some evidence.</p>
+<p><img style="float: left;" src="https://blogs.infosupport.com/wp-content/uploads/2016/08/logbacklogo.jpg" alt="logback logo" width="170" height="95">I have built a <a href="https://github.com/sdegroot/logback-context-logbuffer">reference implementation</a> of this system using Logback. A closely related&nbsp;implementation is currently being used in production for some of my projects.&nbsp;<img class="alignnone" src="https://maven-badges.herokuapp.com/maven-central/com.github.sdegroot/logback-context-logbuffer/badge.svg" alt="maven central latest version" width="128" height="20"></p>
+<h2><strong>How do others handle this problem?</strong></h2>
+<p>Every major project at a certain point will face this issue. Especially products like Facebook, Netflix and Ebay will have an enormous amount of logs. To be honest, I can’t even imagine how these guys manage this.</p>
+<p>Google however published a paper on this subject. I am mentioning this specifically because Google has a whole different approach. I recommend to spend some time to read the great summary of Adrian Colyer. Paper:&nbsp;<a href="https://blog.acolyer.org/2015/10/06/dapper-a-large-scale-distributed-systems-tracing-infrastructure/">Dapper, A Large Scale Distributed Systems Tracing&nbsp;Infrastructure.</a></p></p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="http://iamgroot.info//tags/logging/">logging</a>
+
+  <a class="tag tag--primary tag--small" href="http://iamgroot.info//tags/performance/">performance</a>
+
+  <a class="tag tag--primary tag--small" href="http://iamgroot.info//tags/logback/">logback</a>
+
+  <a class="tag tag--primary tag--small" href="http://iamgroot.info//tags/java/">java</a>
+
+  <a class="tag tag--primary tag--small" href="http://iamgroot.info//tags/improvement/">improvement</a>
+
+  <a class="tag tag--primary tag--small" href="http://iamgroot.info//tags/tools/">tools</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+            <i class="fa fa-angle-left"></i>
+            <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+          </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="http://iamgroot.info/categories/" data-tooltip="Categories">
+          
+            <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
+    
+      <li class="post-action hide-lg hide-md hide-sm">
+        <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+          <i class="fa fa-share-alt"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http%3a%2f%2fiamgroot.info%2f2017%2f02%2flogging-without-compromising-on-detail-or-performance%2f">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fiamgroot.info%2f2017%2f02%2flogging-without-compromising-on-detail-or-performance%2f">
+          <i class="fa fa-facebook-official"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fiamgroot.info%2f2017%2f02%2flogging-without-compromising-on-detail-or-performance%2f">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+    
+    
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+            
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2017 Sander de Groot. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+            <i class="fa fa-angle-left"></i>
+            <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+          </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="http://iamgroot.info/categories/" data-tooltip="Categories">
+          
+            <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
+    
+      <li class="post-action hide-lg hide-md hide-sm">
+        <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+          <i class="fa fa-share-alt"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http%3a%2f%2fiamgroot.info%2f2017%2f02%2flogging-without-compromising-on-detail-or-performance%2f">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fiamgroot.info%2f2017%2f02%2flogging-without-compromising-on-detail-or-performance%2f">
+          <i class="fa fa-facebook-official"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fiamgroot.info%2f2017%2f02%2flogging-without-compromising-on-detail-or-performance%2f">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+    
+    
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <ul class="share-options">
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http%3a%2f%2fiamgroot.info%2f2017%2f02%2flogging-without-compromising-on-detail-or-performance%2f">
+        <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fiamgroot.info%2f2017%2f02%2flogging-without-compromising-on-detail-or-performance%2f">
+        <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fiamgroot.info%2f2017%2f02%2flogging-without-compromising-on-detail-or-performance%2f">
+        <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="http://iamgroot.info/images/SanderDeGroot.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Sander de Groot</h4>
+    
+      <div id="about-card-bio">Loves to automate the world!</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Fullstack Software Engineer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Netherlands
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Search" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://iamgroot.info/2017/02/logging-without-compromising-on-detail-or-performance/">
+                <h3 class="media-heading">Logging without compromising on detail or performance</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Feb 2, 2017
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>Application logging. Have you ever had to choose between detailled logging or performance?
+Where you on one side wanted to log something on a certain level of detail while
+you knew that this would have an enormous impact on the performance of your application?
+This is exactly the situation I was in while working on some high-load services at <a href="https://www.twyp.com/">Twyp</a>.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no post found"
+         data-message-one="1 post found"
+         data-message-other="{n} posts found">
+         1 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('http://iamgroot.info/images/cover.jpg');"></div>
+  
+
+
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.js"></script>
+
+
+<script src="http://iamgroot.info/js/script-wl33z0n6ocaypepiqrazthtivfrliqijej4rq8ek8gvrv1awftmgjuv8k4zc.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight').each(function(i, block) {
+    var code = "";
+    hljs.highlightAuto(block.innerText).value.split(/\r\n|\r|\n/).forEach(function(line) {
+      code += "<span class=\"line\">" + line + "</span><br>";
+    });
+    if (code.length > 0) {
+      block.innerHTML = code;  
+    }
+  });
+  $('pre > code').each(function(i, block) {
+    $(this).addClass('codeblock');
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+  
+    
+  
+
+
+    
+  </body>
+</html>
+

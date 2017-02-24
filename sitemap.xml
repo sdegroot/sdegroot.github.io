@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://iamgroot.info/2017/02/logging-without-compromising-on-detail-or-performance/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://iamgroot.info/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://iamgroot.info/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://iamgroot.info/tags/improvement/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://iamgroot.info/tags/java/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://iamgroot.info/tags/logback/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://iamgroot.info/tags/logging/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://iamgroot.info/tags/performance/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://iamgroot.info/post/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://iamgroot.info/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://iamgroot.info/categories/tips-and-tricks/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://iamgroot.info/tags/tools/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

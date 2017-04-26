@@ -2,111 +2,111 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://iamgroot.info/2017/02/logging-without-compromising-on-detail-or-performance/</loc>
+    <loc>http://lovetoautomate.it/2017/02/logging-without-compromising-on-detail-or-performance/</loc>
     <lastmod>2017-02-24T20:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://iamgroot.info/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</loc>
+    <loc>http://lovetoautomate.it/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://iamgroot.info/tags/architecture/</loc>
-    <lastmod>2016-12-12T12:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://iamgroot.info/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://iamgroot.info/tags/event-driven-architecture/</loc>
+    <loc>http://lovetoautomate.it/tags/architecture/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://iamgroot.info/</loc>
-    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <loc>http://lovetoautomate.it/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://iamgroot.info/tags/improvement/</loc>
-    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://iamgroot.info/tags/java/</loc>
-    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://iamgroot.info/tags/logback/</loc>
-    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://iamgroot.info/tags/logging/</loc>
-    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://iamgroot.info/tags/micro-services/</loc>
+    <loc>http://lovetoautomate.it/tags/event-driven-architecture/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://iamgroot.info/tags/performance/</loc>
+    <loc>http://lovetoautomate.it/</loc>
     <lastmod>2017-02-24T20:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://iamgroot.info/post/</loc>
+    <loc>http://lovetoautomate.it/tags/improvement/</loc>
     <lastmod>2017-02-24T20:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://iamgroot.info/tags/reactive-manifesto/</loc>
+    <loc>http://lovetoautomate.it/tags/java/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lovetoautomate.it/tags/logback/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lovetoautomate.it/tags/logging/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lovetoautomate.it/tags/micro-services/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://iamgroot.info/tags/</loc>
+    <loc>http://lovetoautomate.it/tags/performance/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://iamgroot.info/categories/talk/</loc>
+    <loc>http://lovetoautomate.it/post/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lovetoautomate.it/tags/reactive-manifesto/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://iamgroot.info/categories/tips-and-tricks/</loc>
+    <loc>http://lovetoautomate.it/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lovetoautomate.it/categories/talk/</loc>
+    <lastmod>2016-12-12T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lovetoautomate.it/categories/tips-and-tricks/</loc>
     <lastmod>2017-02-24T20:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://iamgroot.info/tags/tools/</loc>
+    <loc>http://lovetoautomate.it/tags/tools/</loc>
     <lastmod>2017-02-24T20:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://iamgroot.info/tags/twyp/</loc>
+    <loc>http://lovetoautomate.it/tags/twyp/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

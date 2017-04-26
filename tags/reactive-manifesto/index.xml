@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reactive Manifesto on I Am Groot - Blog of Sander de Groot</title>
-    <link>http://iamgroot.info/tags/reactive-manifesto/index.xml</link>
+    <link>http://lovetoautomate.it/tags/reactive-manifesto/index.xml</link>
     <description>Recent content in Reactive Manifesto on I Am Groot - Blog of Sander de Groot</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://iamgroot.info/tags/reactive-manifesto/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://lovetoautomate.it/tags/reactive-manifesto/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Talk: TWYP - An event driven architecture in a fast growing ecosystem</title>
-      <link>http://iamgroot.info/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</link>
+      <link>http://lovetoautomate.it/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</link>
       <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
       
-      <guid>http://iamgroot.info/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</guid>
+      <guid>http://lovetoautomate.it/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</guid>
       <description>&lt;p&gt;I was asked to give a talk on &lt;em&gt;Event Driven Architectures&lt;/em&gt; at &lt;a href=&#34;http://www.laccongres.nl/&#34;&gt;Landelijk Architectuur Congres&lt;/a&gt;.
  This Dutch conference was hosted in &lt;em&gt;&amp;rsquo;s Hertogenbosch&lt;/em&gt; on November 17th-18th 2016.&lt;/p&gt;
 

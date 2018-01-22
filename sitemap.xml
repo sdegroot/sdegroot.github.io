@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://lovetoautomate.it/2018/01/reviving-and-repurposing-this-blog/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://lovetoautomate.it/2017/02/logging-without-compromising-on-detail-or-performance/</loc>
     <lastmod>2017-02-24T20:00:00+00:00</lastmod>
   </url>
@@ -60,7 +65,7 @@
   
   <url>
     <loc>http://lovetoautomate.it/</loc>
-    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -77,14 +82,26 @@
   </url>
   
   <url>
+    <loc>http://lovetoautomate.it/tags/personal/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://lovetoautomate.it/post/</loc>
-    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://lovetoautomate.it/tags/reactive-manifesto/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lovetoautomate.it/tags/repurposing/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

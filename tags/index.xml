@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Lovetoautomate.it - Blog of Sander de Groot</title>
+    <link>http://lovetoautomate.it/tags/</link>
+    <description>Recent content in Tags on Lovetoautomate.it - Blog of Sander de Groot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Dec 2016 12:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://lovetoautomate.it/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Architecture</title>
+      <link>http://lovetoautomate.it/tags/architecture/</link>
+      <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
+      
+      <guid>http://lovetoautomate.it/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Event Driven Architecture</title>
+      <link>http://lovetoautomate.it/tags/event-driven-architecture/</link>
+      <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
+      
+      <guid>http://lovetoautomate.it/tags/event-driven-architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improvement</title>
+      <link>http://lovetoautomate.it/tags/improvement/</link>
+      <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
+      
+      <guid>http://lovetoautomate.it/tags/improvement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>http://lovetoautomate.it/tags/java/</link>
+      <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
+      
+      <guid>http://lovetoautomate.it/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logback</title>
+      <link>http://lovetoautomate.it/tags/logback/</link>
+      <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
+      
+      <guid>http://lovetoautomate.it/tags/logback/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logging</title>
+      <link>http://lovetoautomate.it/tags/logging/</link>
+      <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
+      
+      <guid>http://lovetoautomate.it/tags/logging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Micro Services</title>
+      <link>http://lovetoautomate.it/tags/micro-services/</link>
+      <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
+      
+      <guid>http://lovetoautomate.it/tags/micro-services/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Performance</title>
+      <link>http://lovetoautomate.it/tags/performance/</link>
+      <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
+      
+      <guid>http://lovetoautomate.it/tags/performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reactive Manifesto</title>
+      <link>http://lovetoautomate.it/tags/reactive-manifesto/</link>
+      <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
+      
+      <guid>http://lovetoautomate.it/tags/reactive-manifesto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Techical</title>
+      <link>http://lovetoautomate.it/tags/techical/</link>
+      <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
+      
+      <guid>http://lovetoautomate.it/tags/techical/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>http://lovetoautomate.it/tags/tools/</link>
+      <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
+      
+      <guid>http://lovetoautomate.it/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twyp</title>
+      <link>http://lovetoautomate.it/tags/twyp/</link>
+      <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
+      
+      <guid>http://lovetoautomate.it/tags/twyp/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

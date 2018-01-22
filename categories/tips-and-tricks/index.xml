@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tips And Tricks on I Am Groot - Blog of Sander de Groot</title>
-    <link>http://lovetoautomate.it/categories/tips-and-tricks/index.xml</link>
-    <description>Recent content in Tips And Tricks on I Am Groot - Blog of Sander de Groot</description>
+    <title>Tips And Tricks on Lovetoautomate.it - Blog of Sander de Groot</title>
+    <link>http://lovetoautomate.it/categories/tips-and-tricks/</link>
+    <description>Recent content in Tips And Tricks on Lovetoautomate.it - Blog of Sander de Groot</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://lovetoautomate.it/categories/tips-and-tricks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Feb 2017 20:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://lovetoautomate.it/categories/tips-and-tricks/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Logging without compromising on detail or performance</title>
@@ -17,34 +20,7 @@
       <description>&lt;p&gt;Application logging. Have you ever had to choose between detailled logging or performance?
 Where you on one side wanted to log something on a certain level of detail while
 you knew that this would have an enormous impact on the performance of your application?
-This is exactly the situation I was in while working on some high-load services at &lt;a href=&#34;https://www.twyp.com/&#34;&gt;Twyp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;
-&lt;h2&gt;Always the dilemma, should I log this on DEBUG or INFO?&lt;/h2&gt;
-&lt;p&gt;&lt;img style=&#34;float:right&#34; src=&#34;https://blogs.infosupport.com/wp-content/uploads/2016/08/dilemma-300x182.jpeg&#34; alt=&#34;dilemma&#34; width=&#34;300&#34; height=&#34;182&#34; srcset=&#34;https://blogs.infosupport.com/wp-content/uploads/2016/08/dilemma-300x182.jpeg 300w, https://blogs.infosupport.com/wp-content/uploads/2016/08/dilemma-493x300.jpeg 493w, https://blogs.infosupport.com/wp-content/uploads/2016/08/dilemma.jpeg 625w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34;&gt;&lt;/p&gt;
-&lt;p&gt;When you are working on your application you have to take into account that this code is going to be running somewhere soon. Someone (preferably you yourself) will be maintaining this code.&amp;nbsp;If you have ever had to analyse some incident and&amp;nbsp;you found that the logs were not of use at all, you will know the pain.&lt;/p&gt;
-&lt;p&gt;Luckily there are some people that wrote&amp;nbsp;tips on &lt;a href=&#34;https://www.javacodegeeks.com/2011/01/10-tips-proper-application-logging.html&#34;&gt;how you can write proper log statements&lt;/a&gt;. But keep in mind that the only thing that counts, is&amp;nbsp;the value of the logs to the person or system reading them. If you ever maintained a production application you will know what I am talking about. Applications are logging errors and warnings but you simply don’t understand what exactly caused this error as you are missing vital parts of the context. So, the answer would be&amp;nbsp;to simply enable debug logging, right? Unfortunately it isn’t that simple.&lt;/p&gt;
-&lt;p&gt;Enabling debug logging has two major drawbacks&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Debug logging usually contains more sensitive information about operations. You simply don’t want to be logging&amp;nbsp;that&amp;nbsp;someone specific is making a transaction with some sensitive description… (I leave those up for your imagination)&lt;/li&gt;
-&lt;li&gt;Developers tend to write&amp;nbsp;&lt;em&gt;a lot&lt;/em&gt; of debug statements. Imagine 12 debug statements per service request times 100,000 requests / min. &amp;nbsp;Within the hour you’ll have 72 million log statements.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And aside from these issues, you should also ask yourself, is all this&amp;nbsp;information useful? 99% of the time you will not need this kind of detail, especially in the cases where everything is running just fine.&lt;/p&gt;
-&lt;p&gt;At Twyp we were struggling with&amp;nbsp;this dilemma.&amp;nbsp;Initially we decided to optimise&amp;nbsp;debug logging in the code and then&amp;nbsp;turn it on on production. This was a&amp;nbsp;huge help to our operations people as they finally had all the information about a problem that they needed. But we also&amp;nbsp;noticed that our services started to slow down more and more.&lt;/p&gt;
-&lt;p&gt;Before you read on, I need to warn you that this blog post is about&amp;nbsp;applicative logging. You should never optimise&amp;nbsp;audit-&amp;nbsp;or&amp;nbsp;security logging to the point that you may lose data!&lt;/p&gt;
-&lt;h2&gt;Logging using&amp;nbsp;the contextual-logbuffer&lt;/h2&gt;
-&lt;p&gt;So we need to find a way to achieve the following goal:&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;Only log relevant log statements&amp;nbsp;that can help to resolve&amp;nbsp;problems.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;This is exactly what the&amp;nbsp;&lt;em&gt;contextual-logbuffer&lt;/em&gt;&amp;nbsp;provides. You could best describe the contextual-logbuffer in the following way:&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;A contextual logbuffer is an interceptor running in your log framework that buffers parts of&amp;nbsp;your logs and only flushes this buffer when there is an event that requires previous or future logging to be flushed to disk.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;The contextual logbuffer works based on a &lt;em&gt;FIFO&lt;/em&gt;&amp;nbsp;buffer. It stores all log messages within a certain range (e.g. &lt;em&gt;DEBUG &lt;/em&gt;up until&lt;em&gt; INFO&lt;/em&gt;). Only whenever a configurable threshold is reached will the buffer flushed to disk. This threshold normally is any log message of a certain log level, usually this would be &lt;em&gt;WARN&lt;/em&gt;. This means that all&amp;nbsp;&lt;em&gt;DEBUG&lt;/em&gt;&amp;nbsp;and&lt;em&gt;&amp;nbsp;INFO &lt;/em&gt;log messages are buffered until a&amp;nbsp;&lt;em&gt;WARN&amp;nbsp;&lt;/em&gt;or higher is triggered. If your application is never generating warnings or errors then your application will not log anything anymore, as the buffer is never flushed.&lt;/p&gt;
-&lt;p&gt;A picture says more than 1,000 words, so to put this into perspective check out the diagram below.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://blogs.infosupport.com/wp-content/uploads/2016/08/AD-Context-Logbuffer-1.png&#34;&gt;&lt;img class=&#34;alignnone size-full wp-image-19336&#34; src=&#34;https://blogs.infosupport.com/wp-content/uploads/2016/08/AD-Context-Logbuffer-1.png&#34; alt=&#34;Activity diagram of the contextual logbuffer&#34; width=&#34;805&#34; height=&#34;480&#34; srcset=&#34;https://blogs.infosupport.com/wp-content/uploads/2016/08/AD-Context-Logbuffer-1.png 805w, https://blogs.infosupport.com/wp-content/uploads/2016/08/AD-Context-Logbuffer-1-300x179.png 300w, https://blogs.infosupport.com/wp-content/uploads/2016/08/AD-Context-Logbuffer-1-768x458.png 768w, https://blogs.infosupport.com/wp-content/uploads/2016/08/AD-Context-Logbuffer-1-500x298.png 500w&#34; sizes=&#34;(max-width: 805px) 100vw, 805px&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This mechanism provides a way to always have&amp;nbsp;logging available on the level you need while it prevents the performance hit of logging&amp;nbsp;&lt;em&gt;all&lt;/em&gt; log messages. There is one drawback to note though. Sometimes it can be very useful to have logging available in cases where there was no&amp;nbsp;fault in the system. A typical example could be a customer complaining about a certain issue. If there was no warning or error for that specific scenario, you will not find any logs to help you with the customer complaint. In this case I would recommend you to fall back on your audit logs, which at least should be able to provide you with some evidence.&lt;/p&gt;
-&lt;p&gt;&lt;img style=&#34;float: left;&#34; src=&#34;https://blogs.infosupport.com/wp-content/uploads/2016/08/logbacklogo.jpg&#34; alt=&#34;logback logo&#34; width=&#34;170&#34; height=&#34;95&#34;&gt;I have built a &lt;a href=&#34;https://github.com/sdegroot/logback-context-logbuffer&#34;&gt;reference implementation&lt;/a&gt; of this system using Logback. A closely related&amp;nbsp;implementation is currently being used in production for some of my projects.&amp;nbsp;&lt;img class=&#34;alignnone&#34; src=&#34;https://maven-badges.herokuapp.com/maven-central/com.github.sdegroot/logback-context-logbuffer/badge.svg&#34; alt=&#34;maven central latest version&#34; width=&#34;128&#34; height=&#34;20&#34;&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;strong&gt;How do others handle this problem?&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Every major project at a certain point will face this issue. Especially products like Facebook, Netflix and Ebay will have an enormous amount of logs. To be honest, I can’t even imagine how these guys manage this.&lt;/p&gt;
-&lt;p&gt;Google however published a paper on this subject. I am mentioning this specifically because Google has a whole different approach. I recommend to spend some time to read the great summary of Adrian Colyer. Paper:&amp;nbsp;&lt;a href=&#34;https://blog.acolyer.org/2015/10/06/dapper-a-large-scale-distributed-systems-tracing-infrastructure/&#34;&gt;Dapper, A Large Scale Distributed Systems Tracing&amp;nbsp;Infrastructure.&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;</description>
+This is exactly the situation I was in while working on some high-load services at &lt;a href=&#34;https://www.twyp.com/&#34;&gt;Twyp&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>http://lovetoautomate.it/2017/02/logging-without-compromising-on-detail-or-performance/</loc>
@@ -18,6 +19,11 @@
   </url>
   
   <url>
+    <loc>http://lovetoautomate.it/archives/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://lovetoautomate.it/categories/</loc>
     <priority>0</priority>
   </url>
@@ -25,12 +31,6 @@
   <url>
     <loc>http://lovetoautomate.it/tags/event-driven-architecture/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lovetoautomate.it/</loc>
-    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -54,6 +54,12 @@
   
   <url>
     <loc>http://lovetoautomate.it/tags/logging/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lovetoautomate.it/</loc>
     <lastmod>2017-02-24T20:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -84,12 +90,25 @@
   
   <url>
     <loc>http://lovetoautomate.it/tags/</loc>
+    <lastmod>2016-12-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://lovetoautomate.it/categories/talk/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lovetoautomate.it/tags/techical/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lovetoautomate.it/categories/technology/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

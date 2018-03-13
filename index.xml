@@ -2,21 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lovetoautomate.it - Blog of Sander de Groot</title>
-    <link>http://lovetoautomate.it/</link>
+    <link>https://lovetoautomate.it/</link>
     <description>Recent content on Lovetoautomate.it - Blog of Sander de Groot</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Mar 2018 10:04:53 +0800</lastBuildDate>
     
-	<atom:link href="http://lovetoautomate.it/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://lovetoautomate.it/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Singapore: the city of diversity</title>
+      <link>https://lovetoautomate.it/2018/03/singapore-the-city-of-diversity/</link>
+      <pubDate>Tue, 13 Mar 2018 10:04:53 +0800</pubDate>
+      
+      <guid>https://lovetoautomate.it/2018/03/singapore-the-city-of-diversity/</guid>
+      <description>&lt;p&gt;On March 5, 2018, my journey finally started. The first stop you ask? Singapore! Spending a little over 6 days in this &lt;em&gt;city-state&lt;/em&gt;, allowed me to see quite a bit of what this city has to offer. My verdict? Must visit!&lt;/p&gt;
+
+&lt;p&gt;Want to see more? Follow me on &lt;a href=&#34;https://www.polarsteps.com/luminosity/503421-backpacking-oceania-and-south-east-asia&#34;&gt;Polarsteps&lt;/a&gt;. It&amp;rsquo;s a really cool app, definitely worth taking a look if you are travelling yourself.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Trading a well-paid job for ultimate freedom</title>
+      <link>https://lovetoautomate.it/2018/02/trading-a-well-paid-job-for-ultimate-freedom/</link>
+      <pubDate>Tue, 06 Feb 2018 08:28:21 +0100</pubDate>
+      
+      <guid>https://lovetoautomate.it/2018/02/trading-a-well-paid-job-for-ultimate-freedom/</guid>
+      <description>&lt;p&gt;Sometimes you have to make a decision in your life that goes against everything you ever learned. Recently I made such a decision by quitting my job and buying a ticket to the other side of the world.
+And now the adventure begins&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The 10 things I learned from organizing my first meetup</title>
+      <link>https://lovetoautomate.it/2018/01/the-10-things-i-learned-from-organizing-my-first-meetup/</link>
+      <pubDate>Wed, 31 Jan 2018 07:56:13 +0100</pubDate>
+      
+      <guid>https://lovetoautomate.it/2018/01/the-10-things-i-learned-from-organizing-my-first-meetup/</guid>
+      <description>&lt;p&gt;Finally it happened. On 30 januari 2018 I have organized &lt;a href=&#34;https://www.meetup.com/Netherlands-Camunda-User-Group/events/245891545/&#34;&gt;my first meetup&lt;/a&gt; for the &lt;a href=&#34;https://www.meetup.com/Netherlands-Camunda-User-Group/&#34;&gt;Netherlands Camunda User Group&lt;/a&gt;. What an experience was this. So much has happened to make this event come to life and using this blog post I want to share my experiences in the hopes to inspire others!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Reviving and repurposing this blog</title>
-      <link>http://lovetoautomate.it/2018/01/reviving-and-repurposing-this-blog/</link>
+      <link>https://lovetoautomate.it/2018/01/reviving-and-repurposing-this-blog/</link>
       <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/2018/01/reviving-and-repurposing-this-blog/</guid>
+      <guid>https://lovetoautomate.it/2018/01/reviving-and-repurposing-this-blog/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s been almost a year since my last post. I&amp;rsquo;ve always wanted to write an active blog but I somehow never find the time or the energy to start writing. It&amp;rsquo;s really a shame because writing usually really helps me with digesting my thoughts. Wether this is on a personal or on a professional level, writing helps me to think clearly.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +60,10 @@
     
     <item>
       <title>Logging without compromising on detail or performance</title>
-      <link>http://lovetoautomate.it/2017/02/logging-without-compromising-on-detail-or-performance/</link>
+      <link>https://lovetoautomate.it/2017/02/logging-without-compromising-on-detail-or-performance/</link>
       <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/2017/02/logging-without-compromising-on-detail-or-performance/</guid>
+      <guid>https://lovetoautomate.it/2017/02/logging-without-compromising-on-detail-or-performance/</guid>
       <description>&lt;p&gt;Application logging. Have you ever had to choose between detailled logging or performance?
 Where you on one side wanted to log something on a certain level of detail while
 you knew that this would have an enormous impact on the performance of your application?
@@ -36,10 +72,10 @@ This is exactly the situation I was in while working on some high-load services 
     
     <item>
       <title>Talk: TWYP - An event driven architecture in a fast growing ecosystem</title>
-      <link>http://lovetoautomate.it/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</link>
+      <link>https://lovetoautomate.it/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</link>
       <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</guid>
+      <guid>https://lovetoautomate.it/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</guid>
       <description>I was asked to give a talk on Event Driven Architectures at Landelijk Architectuur Congres. This Dutch conference was hosted in &amp;rsquo;s Hertogenbosch on November 17th-18th 2016.
 The talk explains in more detail on how Twyp&amp;rsquo;s architecture is based on the reactive manifesto. During this presentation I am explaining how Twyp is architected and what we&amp;rsquo;ve learned in over two years of development.
 Unfortunately the talk was not recorded. But you can find the slides on SlideShare.</description>

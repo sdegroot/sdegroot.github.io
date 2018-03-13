@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Micro Services on Lovetoautomate.it - Blog of Sander de Groot</title>
-    <link>http://lovetoautomate.it/tags/micro-services/</link>
+    <link>https://lovetoautomate.it/tags/micro-services/</link>
     <description>Recent content in Micro Services on Lovetoautomate.it - Blog of Sander de Groot</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Dec 2016 12:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://lovetoautomate.it/tags/micro-services/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://lovetoautomate.it/tags/micro-services/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Talk: TWYP - An event driven architecture in a fast growing ecosystem</title>
-      <link>http://lovetoautomate.it/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</link>
+      <link>https://lovetoautomate.it/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</link>
       <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</guid>
+      <guid>https://lovetoautomate.it/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</guid>
       <description>I was asked to give a talk on Event Driven Architectures at Landelijk Architectuur Congres. This Dutch conference was hosted in &amp;rsquo;s Hertogenbosch on November 17th-18th 2016.
 The talk explains in more detail on how Twyp&amp;rsquo;s architecture is based on the reactive manifesto. During this presentation I am explaining how Twyp is architected and what we&amp;rsquo;ve learned in over two years of development.
 Unfortunately the talk was not recorded. But you can find the slides on SlideShare.</description>

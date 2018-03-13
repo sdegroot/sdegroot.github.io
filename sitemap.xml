@@ -3,147 +3,246 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://lovetoautomate.it/2018/01/reviving-and-repurposing-this-blog/</loc>
+    <loc>https://lovetoautomate.it/2018/03/singapore-the-city-of-diversity/</loc>
+    <lastmod>2018-03-13T10:04:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/2018/02/trading-a-well-paid-job-for-ultimate-freedom/</loc>
+    <lastmod>2018-02-06T08:28:21+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/2018/01/the-10-things-i-learned-from-organizing-my-first-meetup/</loc>
+    <lastmod>2018-01-31T07:56:13+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/2018/01/reviving-and-repurposing-this-blog/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://lovetoautomate.it/2017/02/logging-without-compromising-on-detail-or-performance/</loc>
+    <loc>https://lovetoautomate.it/2017/02/logging-without-compromising-on-detail-or-performance/</loc>
     <lastmod>2017-02-24T20:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://lovetoautomate.it/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</loc>
+    <loc>https://lovetoautomate.it/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://lovetoautomate.it/tags/architecture/</loc>
-    <lastmod>2016-12-12T12:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lovetoautomate.it/archives/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lovetoautomate.it/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lovetoautomate.it/tags/event-driven-architecture/</loc>
+    <loc>https://lovetoautomate.it/tags/architecture/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lovetoautomate.it/tags/improvement/</loc>
+    <loc>https://lovetoautomate.it/archives/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/backpacking/</loc>
+    <lastmod>2018-03-13T10:04:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/choices-in-life/</loc>
+    <lastmod>2018-02-06T08:28:21+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/event-driven-architecture/</loc>
+    <lastmod>2016-12-12T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/improvement/</loc>
     <lastmod>2017-02-24T20:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lovetoautomate.it/tags/java/</loc>
+    <loc>https://lovetoautomate.it/tags/java/</loc>
     <lastmod>2017-02-24T20:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lovetoautomate.it/tags/logback/</loc>
+    <loc>https://lovetoautomate.it/tags/life/</loc>
+    <lastmod>2018-02-06T08:28:21+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/categories/life/</loc>
+    <lastmod>2018-02-06T08:28:21+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/live-now-not-later/</loc>
+    <lastmod>2018-02-06T08:28:21+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/logback/</loc>
     <lastmod>2017-02-24T20:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lovetoautomate.it/tags/logging/</loc>
+    <loc>https://lovetoautomate.it/tags/logging/</loc>
     <lastmod>2017-02-24T20:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lovetoautomate.it/</loc>
+    <loc>https://lovetoautomate.it/</loc>
+    <lastmod>2018-03-13T10:04:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/meetup/</loc>
+    <lastmod>2018-01-31T07:56:13+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/micro-services/</loc>
+    <lastmod>2016-12-12T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/organizing/</loc>
+    <lastmod>2018-01-31T07:56:13+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/performance/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/personal/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lovetoautomate.it/tags/micro-services/</loc>
+    <loc>https://lovetoautomate.it/post/</loc>
+    <lastmod>2018-03-13T10:04:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/reactive-manifesto/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lovetoautomate.it/tags/performance/</loc>
-    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lovetoautomate.it/tags/personal/</loc>
+    <loc>https://lovetoautomate.it/tags/repurposing/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lovetoautomate.it/post/</loc>
-    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
+    <loc>https://lovetoautomate.it/tags/sabbatical/</loc>
+    <lastmod>2018-02-06T08:28:21+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lovetoautomate.it/tags/reactive-manifesto/</loc>
+    <loc>https://lovetoautomate.it/tags/singapore/</loc>
+    <lastmod>2018-03-13T10:04:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lovetoautomate.it/tags/repurposing/</loc>
-    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lovetoautomate.it/tags/</loc>
+    <loc>https://lovetoautomate.it/categories/talk/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lovetoautomate.it/categories/talk/</loc>
+    <loc>https://lovetoautomate.it/tags/techical/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/technology/</loc>
+    <lastmod>2018-01-31T07:56:13+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/categories/technology/</loc>
+    <lastmod>2018-01-31T07:56:13+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/categories/tips-and-tricks/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/tools/</loc>
+    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/travel/</loc>
+    <lastmod>2018-03-13T10:04:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/categories/travel/</loc>
+    <lastmod>2018-03-13T10:04:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/travelling/</loc>
+    <lastmod>2018-02-06T08:28:21+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/twyp/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://lovetoautomate.it/tags/techical/</loc>
-    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lovetoautomate.it/categories/technology/</loc>
-    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lovetoautomate.it/categories/tips-and-tricks/</loc>
-    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lovetoautomate.it/tags/tools/</loc>
-    <lastmod>2017-02-24T20:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lovetoautomate.it/tags/twyp/</loc>
-    <lastmod>2016-12-12T12:00:00+00:00</lastmod>
+    <loc>https://lovetoautomate.it/tags/work/</loc>
+    <lastmod>2018-02-06T08:28:21+01:00</lastmod>
     <priority>0</priority>
   </url>
   

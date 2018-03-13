@@ -2,138 +2,246 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Lovetoautomate.it - Blog of Sander de Groot</title>
-    <link>http://lovetoautomate.it/tags/</link>
+    <link>https://lovetoautomate.it/tags/</link>
     <description>Recent content in Tags on Lovetoautomate.it - Blog of Sander de Groot</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Dec 2016 12:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://lovetoautomate.it/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://lovetoautomate.it/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Architecture</title>
-      <link>http://lovetoautomate.it/tags/architecture/</link>
+      <link>https://lovetoautomate.it/tags/architecture/</link>
       <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/tags/architecture/</guid>
+      <guid>https://lovetoautomate.it/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Backpacking</title>
+      <link>https://lovetoautomate.it/tags/backpacking/</link>
+      <pubDate>Tue, 13 Mar 2018 10:04:53 +0800</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/backpacking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Choices in Life</title>
+      <link>https://lovetoautomate.it/tags/choices-in-life/</link>
+      <pubDate>Tue, 06 Feb 2018 08:28:21 +0100</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/choices-in-life/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Event Driven Architecture</title>
-      <link>http://lovetoautomate.it/tags/event-driven-architecture/</link>
+      <link>https://lovetoautomate.it/tags/event-driven-architecture/</link>
       <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/tags/event-driven-architecture/</guid>
+      <guid>https://lovetoautomate.it/tags/event-driven-architecture/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Improvement</title>
-      <link>http://lovetoautomate.it/tags/improvement/</link>
+      <link>https://lovetoautomate.it/tags/improvement/</link>
       <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/tags/improvement/</guid>
+      <guid>https://lovetoautomate.it/tags/improvement/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>http://lovetoautomate.it/tags/java/</link>
+      <link>https://lovetoautomate.it/tags/java/</link>
       <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/tags/java/</guid>
+      <guid>https://lovetoautomate.it/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>https://lovetoautomate.it/tags/life/</link>
+      <pubDate>Tue, 06 Feb 2018 08:28:21 +0100</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Live Now Not Later</title>
+      <link>https://lovetoautomate.it/tags/live-now-not-later/</link>
+      <pubDate>Tue, 06 Feb 2018 08:28:21 +0100</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/live-now-not-later/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Logback</title>
-      <link>http://lovetoautomate.it/tags/logback/</link>
+      <link>https://lovetoautomate.it/tags/logback/</link>
       <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/tags/logback/</guid>
+      <guid>https://lovetoautomate.it/tags/logback/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Logging</title>
-      <link>http://lovetoautomate.it/tags/logging/</link>
+      <link>https://lovetoautomate.it/tags/logging/</link>
       <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/tags/logging/</guid>
+      <guid>https://lovetoautomate.it/tags/logging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meetup</title>
+      <link>https://lovetoautomate.it/tags/meetup/</link>
+      <pubDate>Wed, 31 Jan 2018 07:56:13 +0100</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/meetup/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Micro Services</title>
-      <link>http://lovetoautomate.it/tags/micro-services/</link>
+      <link>https://lovetoautomate.it/tags/micro-services/</link>
       <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/tags/micro-services/</guid>
+      <guid>https://lovetoautomate.it/tags/micro-services/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Organizing</title>
+      <link>https://lovetoautomate.it/tags/organizing/</link>
+      <pubDate>Wed, 31 Jan 2018 07:56:13 +0100</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/organizing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Performance</title>
-      <link>http://lovetoautomate.it/tags/performance/</link>
+      <link>https://lovetoautomate.it/tags/performance/</link>
       <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/tags/performance/</guid>
+      <guid>https://lovetoautomate.it/tags/performance/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Personal</title>
-      <link>http://lovetoautomate.it/tags/personal/</link>
+      <link>https://lovetoautomate.it/tags/personal/</link>
       <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/tags/personal/</guid>
+      <guid>https://lovetoautomate.it/tags/personal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Reactive Manifesto</title>
-      <link>http://lovetoautomate.it/tags/reactive-manifesto/</link>
+      <link>https://lovetoautomate.it/tags/reactive-manifesto/</link>
       <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/tags/reactive-manifesto/</guid>
+      <guid>https://lovetoautomate.it/tags/reactive-manifesto/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Repurposing</title>
-      <link>http://lovetoautomate.it/tags/repurposing/</link>
+      <link>https://lovetoautomate.it/tags/repurposing/</link>
       <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/tags/repurposing/</guid>
+      <guid>https://lovetoautomate.it/tags/repurposing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sabbatical</title>
+      <link>https://lovetoautomate.it/tags/sabbatical/</link>
+      <pubDate>Tue, 06 Feb 2018 08:28:21 +0100</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/sabbatical/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Singapore</title>
+      <link>https://lovetoautomate.it/tags/singapore/</link>
+      <pubDate>Tue, 13 Mar 2018 10:04:53 +0800</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/singapore/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Techical</title>
-      <link>http://lovetoautomate.it/tags/techical/</link>
+      <link>https://lovetoautomate.it/tags/techical/</link>
       <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/tags/techical/</guid>
+      <guid>https://lovetoautomate.it/tags/techical/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technology</title>
+      <link>https://lovetoautomate.it/tags/technology/</link>
+      <pubDate>Wed, 31 Jan 2018 07:56:13 +0100</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/technology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tools</title>
-      <link>http://lovetoautomate.it/tags/tools/</link>
+      <link>https://lovetoautomate.it/tags/tools/</link>
       <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/tags/tools/</guid>
+      <guid>https://lovetoautomate.it/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travel</title>
+      <link>https://lovetoautomate.it/tags/travel/</link>
+      <pubDate>Tue, 13 Mar 2018 10:04:53 +0800</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/travel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travelling</title>
+      <link>https://lovetoautomate.it/tags/travelling/</link>
+      <pubDate>Tue, 06 Feb 2018 08:28:21 +0100</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/travelling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Twyp</title>
-      <link>http://lovetoautomate.it/tags/twyp/</link>
+      <link>https://lovetoautomate.it/tags/twyp/</link>
       <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
       
-      <guid>http://lovetoautomate.it/tags/twyp/</guid>
+      <guid>https://lovetoautomate.it/tags/twyp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Work</title>
+      <link>https://lovetoautomate.it/tags/work/</link>
+      <pubDate>Tue, 06 Feb 2018 08:28:21 +0100</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/work/</guid>
       <description></description>
     </item>
     

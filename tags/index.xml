@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Lovetoautomate.it - Blog of Sander de Groot</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Dec 2016 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 May 2018 20:51:32 +1000</lastBuildDate>
     
 	<atom:link href="https://lovetoautomate.it/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Alone</title>
+      <link>https://lovetoautomate.it/tags/alone/</link>
+      <pubDate>Mon, 14 May 2018 20:51:32 +1000</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/alone/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Architecture</title>
@@ -23,9 +32,36 @@
     <item>
       <title>Backpacking</title>
       <link>https://lovetoautomate.it/tags/backpacking/</link>
-      <pubDate>Tue, 13 Mar 2018 10:04:53 +0800</pubDate>
+      <pubDate>Thu, 15 Mar 2018 14:32:22 +1300</pubDate>
       
       <guid>https://lovetoautomate.it/tags/backpacking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Being Alone</title>
+      <link>https://lovetoautomate.it/tags/being-alone/</link>
+      <pubDate>Mon, 14 May 2018 20:51:32 +1000</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/being-alone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Camper</title>
+      <link>https://lovetoautomate.it/tags/camper/</link>
+      <pubDate>Mon, 14 May 2018 20:51:32 +1000</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/camper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Camping</title>
+      <link>https://lovetoautomate.it/tags/camping/</link>
+      <pubDate>Mon, 14 May 2018 20:51:32 +1000</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/camping/</guid>
       <description></description>
     </item>
     
@@ -39,11 +75,29 @@
     </item>
     
     <item>
+      <title>Christchurch</title>
+      <link>https://lovetoautomate.it/tags/christchurch/</link>
+      <pubDate>Thu, 15 Mar 2018 14:32:22 +1300</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/christchurch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Event Driven Architecture</title>
       <link>https://lovetoautomate.it/tags/event-driven-architecture/</link>
       <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
       
       <guid>https://lovetoautomate.it/tags/event-driven-architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Freedom Camping</title>
+      <link>https://lovetoautomate.it/tags/freedom-camping/</link>
+      <pubDate>Mon, 14 May 2018 20:51:32 +1000</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/freedom-camping/</guid>
       <description></description>
     </item>
     
@@ -120,6 +174,24 @@
     </item>
     
     <item>
+      <title>New Experience</title>
+      <link>https://lovetoautomate.it/tags/new-experience/</link>
+      <pubDate>Mon, 14 May 2018 20:51:32 +1000</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/new-experience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>New Zealand</title>
+      <link>https://lovetoautomate.it/tags/new-zealand/</link>
+      <pubDate>Thu, 15 Mar 2018 14:32:22 +1300</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/new-zealand/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Organizing</title>
       <link>https://lovetoautomate.it/tags/organizing/</link>
       <pubDate>Wed, 31 Jan 2018 07:56:13 +0100</pubDate>
@@ -143,6 +215,15 @@
       <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://lovetoautomate.it/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quiet</title>
+      <link>https://lovetoautomate.it/tags/quiet/</link>
+      <pubDate>Mon, 14 May 2018 20:51:32 +1000</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/quiet/</guid>
       <description></description>
     </item>
     
@@ -174,11 +255,38 @@
     </item>
     
     <item>
+      <title>Scary</title>
+      <link>https://lovetoautomate.it/tags/scary/</link>
+      <pubDate>Mon, 14 May 2018 20:51:32 +1000</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/scary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Silence</title>
+      <link>https://lovetoautomate.it/tags/silence/</link>
+      <pubDate>Mon, 14 May 2018 20:51:32 +1000</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/silence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Singapore</title>
       <link>https://lovetoautomate.it/tags/singapore/</link>
       <pubDate>Tue, 13 Mar 2018 10:04:53 +0800</pubDate>
       
       <guid>https://lovetoautomate.it/tags/singapore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stars</title>
+      <link>https://lovetoautomate.it/tags/stars/</link>
+      <pubDate>Mon, 14 May 2018 20:51:32 +1000</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/stars/</guid>
       <description></description>
     </item>
     
@@ -212,7 +320,7 @@
     <item>
       <title>Travel</title>
       <link>https://lovetoautomate.it/tags/travel/</link>
-      <pubDate>Tue, 13 Mar 2018 10:04:53 +0800</pubDate>
+      <pubDate>Thu, 15 Mar 2018 14:32:22 +1300</pubDate>
       
       <guid>https://lovetoautomate.it/tags/travel/</guid>
       <description></description>

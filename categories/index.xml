@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Lovetoautomate.it - Blog of Sander de Groot</title>
+    <title>Categories on Lovetoautomate.it - Sander de Groot - Nomadic Software Engineer</title>
     <link>https://lovetoautomate.it/categories/</link>
-    <description>Recent content in Categories on Lovetoautomate.it - Blog of Sander de Groot</description>
+    <description>Recent content in Categories on Lovetoautomate.it - Sander de Groot - Nomadic Software Engineer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
 	<atom:link href="https://lovetoautomate.it/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Digital Nomad</title>
+      <link>https://lovetoautomate.it/categories/digital-nomad/</link>
+      <pubDate>Tue, 14 Aug 2018 16:56:03 +0200</pubDate>
+      
+      <guid>https://lovetoautomate.it/categories/digital-nomad/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Life</title>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Lovetoautomate.it - Blog of Sander de Groot</title>
+    <title>Tags on Lovetoautomate.it - Sander de Groot - Nomadic Software Engineer</title>
     <link>https://lovetoautomate.it/tags/</link>
-    <description>Recent content in Tags on Lovetoautomate.it - Blog of Sander de Groot</description>
+    <description>Recent content in Tags on Lovetoautomate.it - Sander de Groot - Nomadic Software Engineer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 14 May 2018 20:51:32 +1000</lastBuildDate>
@@ -26,6 +26,15 @@
       <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
       
       <guid>https://lovetoautomate.it/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assignment</title>
+      <link>https://lovetoautomate.it/tags/assignment/</link>
+      <pubDate>Tue, 14 Aug 2018 16:56:03 +0200</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/assignment/</guid>
       <description></description>
     </item>
     
@@ -75,6 +84,15 @@
     </item>
     
     <item>
+      <title>Challenge</title>
+      <link>https://lovetoautomate.it/tags/challenge/</link>
+      <pubDate>Tue, 14 Aug 2018 16:56:03 +0200</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/challenge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Choices in Life</title>
       <link>https://lovetoautomate.it/tags/choices-in-life/</link>
       <pubDate>Tue, 06 Feb 2018 08:28:21 +0100</pubDate>
@@ -95,7 +113,7 @@
     <item>
       <title>Digital Nomad</title>
       <link>https://lovetoautomate.it/tags/digital-nomad/</link>
-      <pubDate>Thu, 12 Jul 2018 08:28:41 +0200</pubDate>
+      <pubDate>Tue, 14 Aug 2018 16:56:03 +0200</pubDate>
       
       <guid>https://lovetoautomate.it/tags/digital-nomad/</guid>
       <description></description>
@@ -131,7 +149,7 @@
     <item>
       <title>Java</title>
       <link>https://lovetoautomate.it/tags/java/</link>
-      <pubDate>Fri, 24 Feb 2017 20:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Aug 2018 16:56:03 +0200</pubDate>
       
       <guid>https://lovetoautomate.it/tags/java/</guid>
       <description></description>
@@ -246,6 +264,15 @@
     </item>
     
     <item>
+      <title>Project</title>
+      <link>https://lovetoautomate.it/tags/project/</link>
+      <pubDate>Tue, 14 Aug 2018 16:56:03 +0200</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Quiet</title>
       <link>https://lovetoautomate.it/tags/quiet/</link>
       <pubDate>Mon, 14 May 2018 20:51:32 +1000</pubDate>
@@ -260,6 +287,15 @@
       <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
       
       <guid>https://lovetoautomate.it/tags/reactive-manifesto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Remote Work</title>
+      <link>https://lovetoautomate.it/tags/remote-work/</link>
+      <pubDate>Tue, 14 Aug 2018 16:56:03 +0200</pubDate>
+      
+      <guid>https://lovetoautomate.it/tags/remote-work/</guid>
       <description></description>
     </item>
     
@@ -374,7 +410,7 @@
     <item>
       <title>Work</title>
       <link>https://lovetoautomate.it/tags/work/</link>
-      <pubDate>Tue, 06 Feb 2018 08:28:21 +0100</pubDate>
+      <pubDate>Tue, 14 Aug 2018 16:56:03 +0200</pubDate>
       
       <guid>https://lovetoautomate.it/tags/work/</guid>
       <description></description>

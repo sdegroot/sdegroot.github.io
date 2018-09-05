@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://lovetoautomate.it/2018/09/my-thoughts-about-working-remotely/</loc>
+    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lovetoautomate.it/2018/08/time-to-start-the-next-adventure/</loc>
     <lastmod>2018-08-22T16:56:03+02:00</lastmod>
   </url>
@@ -129,14 +134,26 @@
   </url>
   
   <url>
+    <loc>https://lovetoautomate.it/tags/collaboration/</loc>
+    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/communication/</loc>
+    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://lovetoautomate.it/tags/digital-nomad/</loc>
-    <lastmod>2018-08-22T16:56:03+02:00</lastmod>
+    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://lovetoautomate.it/categories/digital-nomad/</loc>
-    <lastmod>2018-08-22T16:56:03+02:00</lastmod>
+    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -196,7 +213,7 @@
   
   <url>
     <loc>https://lovetoautomate.it/</loc>
-    <lastmod>2018-08-22T16:56:03+02:00</lastmod>
+    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -209,6 +226,12 @@
   <url>
     <loc>https://lovetoautomate.it/tags/micro-services/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/mindset/</loc>
+    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -250,7 +273,13 @@
   
   <url>
     <loc>https://lovetoautomate.it/post/</loc>
-    <lastmod>2018-08-22T16:56:03+02:00</lastmod>
+    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/productivity/</loc>
+    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -281,6 +310,12 @@
   <url>
     <loc>https://lovetoautomate.it/tags/repurposing/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/results/</loc>
+    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -375,6 +410,12 @@
   </url>
   
   <url>
+    <loc>https://lovetoautomate.it/tags/trust/</loc>
+    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://lovetoautomate.it/tags/twyp/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -383,6 +424,12 @@
   <url>
     <loc>https://lovetoautomate.it/tags/work/</loc>
     <lastmod>2018-08-22T16:56:03+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/working-remote/</loc>
+    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://lovetoautomate.it/2019/01/digital-nomad-in-your-own-country/</loc>
+    <lastmod>2019-01-13T21:08:19+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lovetoautomate.it/2018/09/my-thoughts-on-working-remotely/</loc>
     <lastmod>2018-09-05T09:28:41+02:00</lastmod>
   </url>
@@ -60,6 +65,12 @@
   <url>
     <loc>https://lovetoautomate.it/tags/alone/</loc>
     <lastmod>2018-05-14T20:51:32+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/amsterdam/</loc>
+    <lastmod>2019-01-13T21:08:19+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -147,13 +158,13 @@
   
   <url>
     <loc>https://lovetoautomate.it/tags/digital-nomad/</loc>
-    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
+    <lastmod>2019-01-13T21:08:19+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://lovetoautomate.it/categories/digital-nomad/</loc>
-    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
+    <lastmod>2019-01-13T21:08:19+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -166,6 +177,18 @@
   <url>
     <loc>https://lovetoautomate.it/tags/freedom-camping/</loc>
     <lastmod>2018-05-14T20:51:32+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/freelance/</loc>
+    <lastmod>2019-01-13T21:08:19+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/houseboat/</loc>
+    <lastmod>2019-01-13T21:08:19+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -213,7 +236,7 @@
   
   <url>
     <loc>https://lovetoautomate.it/</loc>
-    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
+    <lastmod>2019-01-13T21:08:19+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -261,7 +284,7 @@
   
   <url>
     <loc>https://lovetoautomate.it/tags/personal/</loc>
-    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-13T21:08:19+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -273,7 +296,7 @@
   
   <url>
     <loc>https://lovetoautomate.it/post/</loc>
-    <lastmod>2018-09-05T09:28:41+02:00</lastmod>
+    <lastmod>2019-01-13T21:08:19+01:00</lastmod>
     <priority>0</priority>
   </url>
   

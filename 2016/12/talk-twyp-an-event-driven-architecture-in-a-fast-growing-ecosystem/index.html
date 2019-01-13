@@ -1,5 +1,9 @@
 
 
+  
+    
+  
+
 
   
 
@@ -16,25 +20,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.53 with theme Tranquilpeak 0.4.3-BETA">
-    <title>Logging</title>
+    <title>Talk: TWYP - An event driven architecture in a fast growing ecosystem</title>
     <meta name="author" content="Sander de Groot">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="twyp, event driven architecture, architecture, best practices">
 
     <link rel="icon" href="https://lovetoautomate.it/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://lovetoautomate.it/tags/logging/index.xml">
-    
 
     
-    <meta name="description" content="Blog of Sander de Groot">
-    <meta property="og:description" content="Blog of Sander de Groot">
+    <meta name="description" content="I was asked to give a talk on Event Driven Architectures at Landelijk Architectuur Congres. This Dutch conference was hosted in &rsquo;s Hertogenbosch on November 17th-18th 2016.
+The talk explains in more detail on how Twyp&rsquo;s architecture is based on the reactive manifesto. During this presentation I am explaining how Twyp is architected and what we&rsquo;ve learned in over two years of development.
+Unfortunately the talk was not recorded. But you can find the slides on SlideShare.">
+    <meta property="og:description" content="I was asked to give a talk on Event Driven Architectures at Landelijk Architectuur Congres. This Dutch conference was hosted in &rsquo;s Hertogenbosch on November 17th-18th 2016.
+The talk explains in more detail on how Twyp&rsquo;s architecture is based on the reactive manifesto. During this presentation I am explaining how Twyp is architected and what we&rsquo;ve learned in over two years of development.
+Unfortunately the talk was not recorded. But you can find the slides on SlideShare.">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Logging">
-    <meta property="og:url" content="/tags/logging/">
+    <meta property="og:title" content="Talk: TWYP - An event driven architecture in a fast growing ecosystem">
+    <meta property="og:url" content="/2016/12/talk-twyp-an-event-driven-architecture-in-a-fast-growing-ecosystem/">
     <meta property="og:site_name" content="Lovetoautomate.it - Sander de Groot - Nomadic Software Engineer">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Lovetoautomate.it - Sander de Groot - Nomadic Software Engineer">
-    <meta name="twitter:description" content="Blog of Sander de Groot">
+    <meta name="twitter:description" content="I was asked to give a talk on Event Driven Architectures at Landelijk Architectuur Congres. This Dutch conference was hosted in &rsquo;s Hertogenbosch on November 17th-18th 2016.
+The talk explains in more detail on how Twyp&rsquo;s architecture is based on the reactive manifesto. During this presentation I am explaining how Twyp is architected and what we&rsquo;ve learned in over two years of development.
+Unfortunately the talk was not recorded. But you can find the slides on SlideShare.">
     
     
 
@@ -45,6 +53,8 @@
       <meta property="og:image" content="https://lovetoautomate.it/images/SanderDeGroot.jpg">
     
 
+    
+      <meta property="og:image" content="https://lovetoautomate.it/images/twyp-logo-thumbnail.png">
     
     
     
@@ -83,7 +93,7 @@ if (!doNotTrack) {
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="1">
+      <header id="header" data-behavior="4">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
     <a class="header-title-link" href="https://lovetoautomate.it/">Lovetoautomate.it - Sander de Groot - Nomadic Software Engineer</a>
@@ -103,7 +113,7 @@ if (!doNotTrack) {
   
 </header>
 
-      <nav id="sidebar" data-behavior="1">
+      <nav id="sidebar" data-behavior="4">
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
@@ -242,40 +252,26 @@ if (!doNotTrack) {
 </nav>
 
       
-        
 
-      
-      <div id="main" data-behavior="1"
+      <div id="main" data-behavior="4"
         class="
                hasCoverMetaIn
                ">
-        
-          <section class="postShorten-group main-content-wrap">
-            
-            
-              
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
   
-    
+    <h1 class="post-title" itemprop="headline">
+      Talk: TWYP - An event driven architecture in a fast growing ecosystem
+    </h1>
   
-
-
   
-
-<article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://lovetoautomate.it/2017/02/logging-without-compromising-on-detail-or-performance/">
-          Logging without compromising on detail or performance
-        </a>
-      </h1>
-      
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2017-02-24T20:00:00Z">
+      <time itemprop="datePublished" datetime="2016-12-12T12:00:00Z">
         
-  February 24, 2017
+  December 12, 2016
 
       </time>
     
@@ -284,7 +280,7 @@ if (!doNotTrack) {
   
     <span>in</span>
     
-      <a class="category-link" href="https://lovetoautomate.it/categories/tips-and-tricks">Tips and tricks</a>, 
+      <a class="category-link" href="https://lovetoautomate.it/categories/talk">Talk</a>, 
     
       <a class="category-link" href="https://lovetoautomate.it/categories/technology">Technology</a>
     
@@ -292,32 +288,113 @@ if (!doNotTrack) {
 
   </div>
 
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>Application logging. Have you ever had to choose between detailled logging or performance?
-Where you on one side wanted to log something on a certain level of detail while
-you knew that this would have an enormous impact on the performance of your application?
-This is exactly the situation I was in while working on some high-load services at <a href="https://www.twyp.com/">Twyp</a>.</p>
-      <p>
-        <a href="https://lovetoautomate.it/2017/02/logging-without-compromising-on-detail-or-performance/" class="postShorten-excerpt_link link">Continue reading</a>
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>I was asked to give a talk on <em>Event Driven Architectures</em> at <a href="http://www.laccongres.nl/">Landelijk Architectuur Congres</a>.
+ This Dutch conference was hosted in <em>&rsquo;s Hertogenbosch</em> on November 17th-18th 2016.</p>
+
+<p>The talk explains in more detail on how Twyp&rsquo;s architecture is based on the reactive manifesto.
+During this presentation I am explaining how Twyp is architected and what we&rsquo;ve learned in over two years of development.</p>
+
+<p>Unfortunately the talk was not recorded. But you can find the slides on <a href="https://www.slideshare.net/SanderdeGroot3/twyp-an-event-driven-architecture-in-a-fast-growing-ecosystem">SlideShare</a>.</p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://lovetoautomate.it/tags/twyp/">twyp</a>
+
+  <a class="tag tag--primary tag--small" href="https://lovetoautomate.it/tags/event-driven-architecture/">event driven architecture</a>
+
+  <a class="tag tag--primary tag--small" href="https://lovetoautomate.it/tags/architecture/">architecture</a>
+
+  <a class="tag tag--primary tag--small" href="https://lovetoautomate.it/tags/micro-services/">micro services</a>
+
+  <a class="tag tag--primary tag--small" href="https://lovetoautomate.it/tags/reactive-manifesto/">reactive manifesto</a>
+
+  <a class="tag tag--primary tag--small" href="https://lovetoautomate.it/tags/techical/">techical</a>
+
+                  </div>
+                
+              
+            
+            
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://lovetoautomate.it/2017/02/logging-without-compromising-on-detail-or-performance/" data-tooltip="Logging without compromising on detail or performance">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
         
-      </p>
-    </div>
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://lovetoautomate.it/2016/12/talk-twyp-an-event-driven-architecture-in-a-fast-growing-ecosystem/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://lovetoautomate.it/2016/12/talk-twyp-an-event-driven-architecture-in-a-fast-growing-ecosystem/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/shareArticle?url=https://lovetoautomate.it/2016/12/talk-twyp-an-event-driven-architecture-in-a-fast-growing-ecosystem/">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
   </div>
-  
-    <a href="https://lovetoautomate.it/2017/02/logging-without-compromising-on-detail-or-performance/">
-      <div class="postShorten-thumbnailimg">
-        <img alt="" itemprop="image" src="https://blogs.infosupport.com/wp-content/uploads/2016/08/logbacklogo.jpg"/>
-      </div>
-    </a>
-  
-</article>
+
 
             
+              
             
-
-          </section>
-        
+          </div>
+        </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
     &copy; 2019 Sander de Groot. All Rights Reserved
@@ -325,6 +402,96 @@ This is exactly the situation I was in while working on some high-load services 
 </footer>
 
       </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://lovetoautomate.it/2017/02/logging-without-compromising-on-detail-or-performance/" data-tooltip="Logging without compromising on detail or performance">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://lovetoautomate.it/2016/12/talk-twyp-an-event-driven-architecture-in-a-fast-growing-ecosystem/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://lovetoautomate.it/2016/12/talk-twyp-an-event-driven-architecture-in-a-fast-growing-ecosystem/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/shareArticle?url=https://lovetoautomate.it/2016/12/talk-twyp-an-event-driven-architecture-in-a-fast-growing-ecosystem/">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flovetoautomate.it%2F2016%2F12%2Ftalk-twyp-an-event-driven-architecture-in-a-fast-growing-ecosystem%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Flovetoautomate.it%2F2016%2F12%2Ftalk-twyp-an-event-driven-architecture-in-a-fast-growing-ecosystem%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Flovetoautomate.it%2F2016%2F12%2Ftalk-twyp-an-event-driven-architecture-in-a-fast-growing-ecosystem%2F">
+          <i class="fa fa-linkedin"></i><span>Share on LinkedIn</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
     </div>
     
     <div id="about">
@@ -580,6 +747,10 @@ This is exactly the situation I was in while working on some high-load services 
 
 
 
+
+  
+    
+  
 
 
 

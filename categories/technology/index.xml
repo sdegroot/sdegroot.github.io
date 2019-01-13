@@ -17,9 +17,7 @@
       <pubDate>Wed, 31 Jan 2018 07:56:13 +0100</pubDate>
       
       <guid>https://lovetoautomate.it/2018/01/the-10-things-i-learned-from-organizing-my-first-meetup/</guid>
-      <description>&lt;p&gt;Finally it happened. On 30 januari 2018 I have organized &lt;a href=&#34;https://www.meetup.com/Netherlands-Camunda-User-Group/events/245891545/&#34;&gt;my first meetup&lt;/a&gt; for the &lt;a href=&#34;https://www.meetup.com/Netherlands-Camunda-User-Group/&#34;&gt;Netherlands Camunda User Group&lt;/a&gt;. What an experience was this. So much has happened to make this event come to life and using this blog post I want to share my experiences in the hopes to inspire others!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Finally it happened. On 30 januari 2018 I have organized &lt;a href=&#34;https://www.meetup.com/Netherlands-Camunda-User-Group/events/245891545/&#34;&gt;my first meetup&lt;/a&gt; for the &lt;a href=&#34;https://www.meetup.com/Netherlands-Camunda-User-Group/&#34;&gt;Netherlands Camunda User Group&lt;/a&gt;. What an experience was this. So much has happened to make this event come to life and using this blog post I want to share my experiences in the hopes to inspire others!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -36,10 +34,10 @@ This is exactly the situation I was in while working on some high-load services 
     
     <item>
       <title>Talk: TWYP - An event driven architecture in a fast growing ecosystem</title>
-      <link>https://lovetoautomate.it/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</link>
+      <link>https://lovetoautomate.it/2016/12/talk-twyp-an-event-driven-architecture-in-a-fast-growing-ecosystem/</link>
       <pubDate>Mon, 12 Dec 2016 12:00:00 +0000</pubDate>
       
-      <guid>https://lovetoautomate.it/2016/12/talk-twyp---an-event-driven-architecture-in-a-fast-growing-ecosystem/</guid>
+      <guid>https://lovetoautomate.it/2016/12/talk-twyp-an-event-driven-architecture-in-a-fast-growing-ecosystem/</guid>
       <description>I was asked to give a talk on Event Driven Architectures at Landelijk Architectuur Congres. This Dutch conference was hosted in &amp;rsquo;s Hertogenbosch on November 17th-18th 2016.
 The talk explains in more detail on how Twyp&amp;rsquo;s architecture is based on the reactive manifesto. During this presentation I am explaining how Twyp is architected and what we&amp;rsquo;ve learned in over two years of development.
 Unfortunately the talk was not recorded. But you can find the slides on SlideShare.</description>

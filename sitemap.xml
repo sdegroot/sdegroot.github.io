@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://lovetoautomate.it/2019/02/what-if-recruiters-would-be-software-engineers-themselves/</loc>
+    <lastmod>2019-02-11T20:41:40+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lovetoautomate.it/2019/01/let-jack-search-for-the-cheapest-flight-tickets/</loc>
     <lastmod>2019-01-31T20:42:03+01:00</lastmod>
   </url>
@@ -126,6 +131,12 @@
   </url>
   
   <url>
+    <loc>https://lovetoautomate.it/tags/business/</loc>
+    <lastmod>2019-02-11T20:41:40+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://lovetoautomate.it/tags/camper/</loc>
     <lastmod>2018-05-14T20:51:32+10:00</lastmod>
     <priority>0</priority>
@@ -134,6 +145,12 @@
   <url>
     <loc>https://lovetoautomate.it/tags/camping/</loc>
     <lastmod>2018-05-14T20:51:32+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/career/</loc>
+    <lastmod>2019-02-11T20:41:40+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -173,14 +190,14 @@
   </url>
   
   <url>
-    <loc>https://lovetoautomate.it/tags/digital-nomad/</loc>
-    <lastmod>2019-01-28T20:35:44+01:00</lastmod>
+    <loc>https://lovetoautomate.it/categories/digital-nomad/</loc>
+    <lastmod>2019-01-13T21:08:19+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://lovetoautomate.it/categories/digital-nomad/</loc>
-    <lastmod>2019-01-13T21:08:19+01:00</lastmod>
+    <loc>https://lovetoautomate.it/tags/digital-nomad/</loc>
+    <lastmod>2019-01-28T20:35:44+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -215,8 +232,20 @@
   </url>
   
   <url>
+    <loc>https://lovetoautomate.it/tags/idea/</loc>
+    <lastmod>2019-02-11T20:41:40+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://lovetoautomate.it/tags/improvement/</loc>
     <lastmod>2017-02-24T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/information-technology/</loc>
+    <lastmod>2019-02-11T20:41:40+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -227,13 +256,13 @@
   </url>
   
   <url>
-    <loc>https://lovetoautomate.it/tags/life/</loc>
+    <loc>https://lovetoautomate.it/categories/life/</loc>
     <lastmod>2018-02-06T08:28:21+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://lovetoautomate.it/categories/life/</loc>
+    <loc>https://lovetoautomate.it/tags/life/</loc>
     <lastmod>2018-02-06T08:28:21+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -258,7 +287,7 @@
   
   <url>
     <loc>https://lovetoautomate.it/</loc>
-    <lastmod>2019-01-31T20:42:03+01:00</lastmod>
+    <lastmod>2019-02-11T20:41:40+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -318,7 +347,7 @@
   
   <url>
     <loc>https://lovetoautomate.it/post/</loc>
-    <lastmod>2019-01-31T20:42:03+01:00</lastmod>
+    <lastmod>2019-02-11T20:41:40+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -343,6 +372,18 @@
   <url>
     <loc>https://lovetoautomate.it/tags/reactive-manifesto/</loc>
     <lastmod>2016-12-12T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/categories/recruitment/</loc>
+    <lastmod>2019-02-11T20:41:40+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lovetoautomate.it/tags/recruitment/</loc>
+    <lastmod>2019-02-11T20:41:40+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -425,14 +466,14 @@
   </url>
   
   <url>
-    <loc>https://lovetoautomate.it/tags/technology/</loc>
-    <lastmod>2018-01-31T07:56:13+01:00</lastmod>
+    <loc>https://lovetoautomate.it/categories/technology/</loc>
+    <lastmod>2019-01-28T20:35:44+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://lovetoautomate.it/categories/technology/</loc>
-    <lastmod>2019-01-28T20:35:44+01:00</lastmod>
+    <loc>https://lovetoautomate.it/tags/technology/</loc>
+    <lastmod>2018-01-31T07:56:13+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -455,14 +496,14 @@
   </url>
   
   <url>
-    <loc>https://lovetoautomate.it/tags/travel/</loc>
-    <lastmod>2018-07-12T08:28:41+02:00</lastmod>
+    <loc>https://lovetoautomate.it/categories/travel/</loc>
+    <lastmod>2019-01-31T20:42:03+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://lovetoautomate.it/categories/travel/</loc>
-    <lastmod>2019-01-31T20:42:03+01:00</lastmod>
+    <loc>https://lovetoautomate.it/tags/travel/</loc>
+    <lastmod>2018-07-12T08:28:41+02:00</lastmod>
     <priority>0</priority>
   </url>
   
